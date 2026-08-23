@@ -49,13 +49,13 @@ Additional folders and projects will be added as my skills develop.
 
 Current Learning Progress
 SQL
- SELECT and FROM
- Selecting specific columns
- WHERE
- Comparison operators
- AND / OR
- IN
- BETWEEN
+[x] SELECT and FROM
+[x] Selecting specific columns
+[x] WHERE
+[x] Comparison operators
+[x] AND / OR
+[x] IN
+[x] BETWEEN
  ORDER BY
  LIMIT
  DISTINCT
