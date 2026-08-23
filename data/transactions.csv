@@ -1,0 +1,13 @@
+transaction_id,customer_id,amount,currency,country,transaction_type,status
+1001,501,450,EUR,PL,Transfer,Completed
+1002,502,12500,EUR,DE,Transfer,Completed
+1003,501,9200,EUR,PL,Card Payment,Completed
+1004,503,15000,USD,US,Transfer,Pending
+1005,504,780,EUR,PL,Card Payment,Completed
+1006,502,9800,EUR,NL,Transfer,Completed
+1007,505,25000,GBP,GB,Transfer,Failed
+1008,503,11000,USD,US,Transfer,Completed
+1009,506,320,EUR,FR,Card Payment,Completed
+1010,502,8700,EUR,DE,Transfer,Completed
+1011,507,10500,EUR,PL,Transfer,Completed
+1012,508,200,EUR,PL,Card Payment,Declined
