@@ -4,13 +4,13 @@ Welcome to my data analysis portfolio.
 
 This repository documents my journey in developing practical data analysis skills using SQL, Excel, Power BI and Python.
 
-The goal is to build a strong foundation in data analysis and gradually apply these skills to real-world business problems, including customer analytics, financial data and transaction monitoring.
+The goal is to build a strong foundation in data analysis and gradually apply these skills to real-world business problems, including customer analytics, fraud prevention, financial data and transaction monitoring.
 
 ## About This Portfolio
 
-I am developing my data analytics skills alongside my professional experience in Transaction Monitoring.
+I am developing my data analytics skills alongside my professional experience as Fraud Analyst.
 
-While financial crime and transaction monitoring are areas of interest, this portfolio is intentionally broader and covers general data analysis techniques that can be applied across different industries and business domains.
+While fraud prevention and transaction monitoring are areas of interest, this portfolio is intentionally broader and covers general data analysis techniques that can be applied across different industries and business domains.
 
 ## Tools & Technologies
 
