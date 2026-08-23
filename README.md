@@ -48,6 +48,7 @@ projects/
 Additional folders and projects will be added as my skills develop.
 
 Current Learning Progress
+
 SQL
 ☑ SELECT and FROM
 ☑ Selecting specific columns
@@ -69,6 +70,7 @@ SQL
 ☐ Subqueries
 ☐ CTEs
 ☐ Window functions
+
 Excel
 ☐ Excel fundamentals
 ☐ Basic formulas
@@ -80,6 +82,7 @@ Excel
 ☐ Conditional Formatting
 ☐ Power Query
 ☐ Data analysis projects
+
 Power BI
 ☐ Data import
 ☐ Data transformation
@@ -87,6 +90,7 @@ Power BI
 ☐ DAX fundamentals
 ☐ Interactive dashboards
 ☐ Data analysis projects
+
 Python
 ☐ Python fundamentals
 ☐ Data types and structures
@@ -95,6 +99,7 @@ Python
 ☐ Data cleaning
 ☐ Data analysis
 ☐ Data visualization
+
 Projects
 
 Practical projects will be added as I progress.
