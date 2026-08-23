@@ -24,6 +24,7 @@ While financial crime and transaction monitoring are areas of interest, this por
 
 ## Repository Structure
 
+```text
 SQL/
 └── exercises/
 
@@ -48,50 +49,50 @@ Additional folders and projects will be added as my skills develop.
 
 Current Learning Progress
 SQL
-[x] SELECT and FROM
-[x] Selecting specific columns
-[x] WHERE
-[x] Comparison operators
-[x] AND / OR
-[x] IN
-[x] BETWEEN
-[ ] ORDER BY
-[ ] LIMIT
-[ ] DISTINCT
-[ ] Aggregate functions
-[ ] GROUP BY
-[ ] HAVING
-[ ] JOINs
-[ ] CASE WHEN
-[ ] Subqueries
-[ ] CTEs
-[ ] Window functions
+ SELECT and FROM
+ Selecting specific columns
+ WHERE
+ Comparison operators
+ AND / OR
+ IN
+ BETWEEN
+ ORDER BY
+ LIMIT
+ DISTINCT
+ Aggregate functions
+ GROUP BY
+ HAVING
+ JOINs
+ CASE WHEN
+ Subqueries
+ CTEs
+ Window functions
 Excel
-[ ] Excel fundamentals
-[ ] Basic formulas
-[ ] IF
-[ ] COUNTIF / COUNTIFS
-[ ] SUMIF / SUMIFS
-[ ] XLOOKUP
-[ ] Pivot Tables
-[ ] Conditional Formatting
-[ ] Power Query
-[ ] Data analysis projects
+ Excel fundamentals
+ Basic formulas
+ IF
+ COUNTIF / COUNTIFS
+ SUMIF / SUMIFS
+ XLOOKUP
+ Pivot Tables
+ Conditional Formatting
+ Power Query
+ Data analysis projects
 Power BI
-[ ] Data import
-[ ] Data transformation
-[ ] Data modelling
-[ ] DAX fundamentals
-[ ] Interactive dashboards
-[ ] Data analysis projects
+ Data import
+ Data transformation
+ Data modelling
+ DAX fundamentals
+ Interactive dashboards
+ Data analysis projects
 Python
-[ ] Python fundamentals
-[ ] Data types and structures
-[ ] Functions
-[ ] Pandas
-[ ] Data cleaning
-[ ] Data analysis
-[ ] Data visualization
+ Python fundamentals
+ Data types and structures
+ Functions
+ Pandas
+ Data cleaning
+ Data analysis
+ Data visualization
 Projects
 
 Practical projects will be added as I progress.
