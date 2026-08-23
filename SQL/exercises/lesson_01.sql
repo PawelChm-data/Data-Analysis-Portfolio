@@ -1,6 +1,6 @@
 -- SQL Fundamentals at SQLBolt
 -- Lessons 1
--- Dataset: Synthetic transaction data
+-- Dataset: https://sqlbolt.com/lesson/select_queries_introduction
 
 -- Task 1
 SELECT Title FROM Movies;
