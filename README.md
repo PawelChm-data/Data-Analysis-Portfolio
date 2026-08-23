@@ -49,16 +49,18 @@ Additional folders and projects will be added as my skills develop.
 
 Current Learning Progress
 SQL
-[x] SELECT and FROM
-[x] Selecting specific columns
-[x] WHERE
-[x] Comparison operators
-[x] AND / OR
-[x] IN
-[x] BETWEEN
- ORDER BY
- LIMIT
- DISTINCT
+☑ SELECT and FROM
+☑ Selecting specific columns
+☑ WHERE and filtering
+☑ Comparison operators
+☑ AND / OR
+☑ IN
+☑ BETWEEN
+☐ LIKE
+☐ NULL values
+☐ ORDER BY
+☐ LIMIT / OFFSET
+☐ DISTINCT
  Aggregate functions
  GROUP BY
  HAVING
