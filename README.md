@@ -61,40 +61,40 @@ SQL
 ☐ ORDER BY
 ☐ LIMIT / OFFSET
 ☐ DISTINCT
- Aggregate functions
- GROUP BY
- HAVING
- JOINs
- CASE WHEN
- Subqueries
- CTEs
- Window functions
+☐ Aggregate functions
+☐ GROUP BY
+☐ HAVING
+☐ JOINs
+☐ CASE WHEN
+☐ Subqueries
+☐ CTEs
+☐ Window functions
 Excel
- Excel fundamentals
- Basic formulas
- IF
- COUNTIF / COUNTIFS
- SUMIF / SUMIFS
- XLOOKUP
- Pivot Tables
- Conditional Formatting
- Power Query
- Data analysis projects
+☐ Excel fundamentals
+☐ Basic formulas
+☐ IF
+☐ COUNTIF / COUNTIFS
+☐ SUMIF / SUMIFS
+☐ XLOOKUP
+☐ Pivot Tables
+☐ Conditional Formatting
+☐ Power Query
+☐ Data analysis projects
 Power BI
- Data import
- Data transformation
- Data modelling
- DAX fundamentals
- Interactive dashboards
- Data analysis projects
+☐ Data import
+☐ Data transformation
+☐ Data modelling
+☐ DAX fundamentals
+☐ Interactive dashboards
+☐ Data analysis projects
 Python
- Python fundamentals
- Data types and structures
- Functions
- Pandas
- Data cleaning
- Data analysis
- Data visualization
+☐ Python fundamentals
+☐ Data types and structures
+☐ Functions
+☐ Pandas
+☐ Data cleaning
+☐ Data analysis
+☐ Data visualization
 Projects
 
 Practical projects will be added as I progress.
