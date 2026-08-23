@@ -126,6 +126,24 @@ Gradual development of more advanced technical skills
 
 The goal is not only to learn syntax and tools, but to understand how data can be used to answer business questions and support decision-making.
 
+## Datasets
+
+### Transactions Dataset
+
+A small synthetic dataset containing fictional financial transactions used for practicing SQL queries and transaction analysis.
+
+The dataset includes:
+
+- Transaction ID
+- Customer ID
+- Amount
+- Currency
+- Country
+- Transaction Type
+- Transaction Status
+
+The dataset is fictional and was created exclusively for educational purposes.
+
 Data Disclaimer
 
 All datasets used in this repository are synthetic, public or appropriately anonymized datasets intended for educational purposes.
