@@ -1,0 +1,254 @@
+/*
+SQL Fundamentals - Lessons 1 & 2
+
+Topics covered:
+- SELECT
+- FROM
+- WHERE
+- Comparison operators
+- AND / OR
+- IN
+- BETWEEN
+
+Dataset:
+Synthetic transaction data created for educational purposes.
+
+Note:
+The dataset is fictional and does not contain real customer or transaction data.
+*/
+
+
+-- ============================================================
+-- SECTION 1: SELECT AND FROM
+-- ============================================================
+
+-- Task 1
+-- Display all transactions.
+
+SELECT *
+FROM transactions;
+
+
+-- Task 2
+-- Display only transaction ID, customer ID and transaction amount.
+
+SELECT transaction_id, customer_id, amount
+FROM transactions;
+
+
+-- ============================================================
+-- SECTION 2: FILTERING WITH WHERE
+-- ============================================================
+
+-- Task 3
+-- Find transactions with an amount greater than 10,000.
+
+SELECT *
+FROM transactions
+WHERE amount > 10000;
+
+
+-- Task 4
+-- Find transactions with an amount of 10,000 or more.
+
+SELECT *
+FROM transactions
+WHERE amount >= 10000;
+
+
+-- Task 5
+-- Find transactions made in Poland.
+
+SELECT *
+FROM transactions
+WHERE country = 'PL';
+
+
+-- ============================================================
+-- SECTION 3: AND / OR
+-- ============================================================
+
+-- Task 6
+-- Find transactions:
+-- - with an amount of at least 5,000
+-- - made in Poland
+-- - using EUR.
+
+SELECT *
+FROM transactions
+WHERE currency = 'EUR'
+  AND amount >= 5000
+  AND country = 'PL';
+
+
+-- Task 7
+-- Find transactions with an amount of at least 10,000
+-- OR less than 500.
+
+SELECT *
+FROM transactions
+WHERE amount >= 10000
+   OR amount < 500;
+
+
+-- ============================================================
+-- SECTION 4: IN
+-- ============================================================
+
+-- Task 8
+-- Find transactions belonging to customers 502 or 503.
+
+SELECT *
+FROM transactions
+WHERE customer_id IN (502, 503);
+
+
+-- Task 9
+-- Find transactions that are not completed.
+
+SELECT *
+FROM transactions
+WHERE status != 'Completed';
+
+
+-- ============================================================
+-- SECTION 5: BETWEEN
+-- ============================================================
+
+-- Task 10
+-- Find transactions with an amount between 5,000 and 10,000,
+-- including both boundaries.
+
+SELECT *
+FROM transactions
+WHERE amount BETWEEN 5000 AND 10000;
+
+
+-- ============================================================
+-- TRANSACTION / FINANCIAL DATA PRACTICE
+-- ============================================================
+
+-- Task 11
+-- Find high-value transactions above 10,000.
+
+SELECT *
+FROM transactions
+WHERE amount > 10000;
+
+
+-- Task 12
+-- Find transactions above 10,000 made in the United States.
+
+SELECT *
+FROM transactions
+WHERE amount > 10000
+  AND country = 'US';
+
+
+-- Task 13
+-- Find transactions between 8,000 and 10,000 EUR.
+
+SELECT *
+FROM transactions
+WHERE amount BETWEEN 8000 AND 10000
+  AND currency = 'EUR';
+
+
+-- Task 14
+-- Find transactions with Failed or Declined status.
+
+SELECT *
+FROM transactions
+WHERE status IN ('Failed', 'Declined');
+
+
+-- Task 15
+-- Find card payments below 500.
+
+SELECT *
+FROM transactions
+WHERE amount < 500
+  AND transaction_type = 'Card Payment';
+
+
+-- ============================================================
+-- CUSTOMER ANALYSIS
+-- ============================================================
+
+-- Task 16
+-- Find all transactions belonging to customer 502.
+
+SELECT *
+FROM transactions
+WHERE customer_id = 502;
+
+
+-- Task 17
+-- Find transactions belonging to customer 502
+-- with an amount greater than 9,000.
+
+SELECT *
+FROM transactions
+WHERE customer_id = 502
+  AND amount > 9000;
+
+
+-- Task 18
+-- Find transactions belonging to customer 502
+-- made in Germany or the Netherlands.
+
+SELECT *
+FROM transactions
+WHERE customer_id = 502
+  AND country IN ('DE', 'NL');
+
+
+-- ============================================================
+-- TM / INVESTIGATION EXERCISE
+-- ============================================================
+
+-- Task 19
+-- Identify transactions that may warrant further investigation:
+-- high-value transactions made by customer 502
+-- in Germany or the Netherlands.
+
+SELECT *
+FROM transactions
+WHERE customer_id = 502
+  AND amount > 8000
+  AND country IN ('DE', 'NL');
+
+
+-- Task 20
+-- Identify completed transactions between 8,000 and 15,000
+-- made in Germany or the Netherlands.
+
+SELECT *
+FROM transactions
+WHERE amount BETWEEN 8000 AND 15000
+  AND country IN ('DE', 'NL')
+  AND status = 'Completed';
+
+
+/*
+TM ANALYTICAL NOTE
+
+A transaction matching a particular rule does not automatically
+mean that the activity is suspicious or constitutes money laundering.
+
+Further investigation may require additional information such as:
+
+- customer profile
+- expected account activity
+- Source of Funds
+- Source of Wealth
+- transaction purpose
+- counterparties
+- transaction frequency
+- historical activity
+- geographic rationale
+
+The purpose of transaction monitoring analysis is to identify
+activity that may warrant further investigation, rather than
+automatically conclude that financial crime has occurred.
+*/
