@@ -1,5 +1,5 @@
 -- SQL Fundamentals at SQLBolt
--- Lessons 2
+-- Lesson: 2
 -- Datset: https://sqlbolt.com/lesson/select_queries_with_constraints
 
 -- Task 1
