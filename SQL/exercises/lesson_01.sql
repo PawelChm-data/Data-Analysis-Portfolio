@@ -1,5 +1,5 @@
 -- SQL Fundamentals at SQLBolt
--- Lessons 1
+-- Lesson: 1
 -- Dataset: https://sqlbolt.com/lesson/select_queries_introduction
 
 -- Task 1
