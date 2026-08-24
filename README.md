@@ -57,7 +57,10 @@ SQL
 ☑ AND / OR
 ☑ IN
 ☑ BETWEEN
-☐ LIKE
+☑ LIKE
+☑ NOT LIKE
+☑ %
+☑ _
 ☐ NULL values
 ☐ ORDER BY
 ☐ LIMIT / OFFSET
