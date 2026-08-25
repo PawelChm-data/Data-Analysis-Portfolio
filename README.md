@@ -50,21 +50,19 @@ Additional folders and projects will be added as my skills develop.
 Current Learning Progress
 
 SQL
-☑ SELECT and FROM
-☑ Selecting specific columns
-☑ WHERE and filtering
+☑ SELECT / FROM
+☑ WHERE
 ☑ Comparison operators
 ☑ AND / OR
-☑ IN
+☑ IN / NOT IN
 ☑ BETWEEN
-☑ LIKE
-☑ NOT LIKE
-☑ %
-☑ _
-☐ NULL values
-☐ ORDER BY
-☐ LIMIT / OFFSET
-☐ DISTINCT
+☑ LIKE / NOT LIKE
+☑ % / _
+☑ DISTINCT
+☑ ORDER BY
+☑ ASC / DESC
+☑ LIMIT
+☑ OFFSET
 ☐ Aggregate functions
 ☐ GROUP BY
 ☐ HAVING
