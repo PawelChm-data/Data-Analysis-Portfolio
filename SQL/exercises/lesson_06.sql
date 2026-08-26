@@ -1,6 +1,6 @@
 -- SQL Fundamentals at SQLBolt
 -- Lesson: 6
--- Datset: https://sqlbolt.com/lesson/select_queries_review
+-- Datset: https://sqlbolt.com/lesson/select_queries_with_joins
 
 -- Task 1
 SELECT Title, Domestic_sales, International_sales FROM Movies
