@@ -63,10 +63,10 @@ SQL
 ☑ ASC / DESC
 ☑ LIMIT
 ☑ OFFSET
+☑ JOINs
 ☐ Aggregate functions
 ☐ GROUP BY
 ☐ HAVING
-☐ JOINs
 ☐ CASE WHEN
 ☐ Subqueries
 ☐ CTEs
