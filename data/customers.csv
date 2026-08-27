@@ -1,0 +1,9 @@
+customer_id,customer_name,country,customer_type
+501,Anna Kowalska,PL,Individual
+502,John Smith,PL,Individual
+503,ACME Ltd,US,Business
+504,Peter Brown,PL,Individual
+505,Global Trade Ltd,GB,Business
+506,Marie Dupont,FR,Individual
+507,Jan Nowak,PL,Individual
+508,Lisa Miller,PL,Individual
