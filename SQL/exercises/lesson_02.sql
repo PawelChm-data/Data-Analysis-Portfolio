@@ -1,6 +1,6 @@
 -- SQL Fundamentals at SQLBolt
 -- Lesson: 2
--- Datset: https://sqlbolt.com/lesson/select_queries_with_constraints
+-- Dataset: https://sqlbolt.com/lesson/select_queries_with_constraints
 
 -- Task 1
 SELECT * FROM movies WHERE id = 6;
