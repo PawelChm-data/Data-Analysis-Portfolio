@@ -1,6 +1,6 @@
 -- SQL Fundamentals at SQLBolt
 -- Lesson: 7
--- Datset: https://sqlbolt.com/lesson/select_queries_with_outer_joins
+-- Dataset: https://sqlbolt.com/lesson/select_queries_with_outer_joins
 
 -- Task 1
 select distinct Buildings.Building_name, Employees.Name from Buildings
