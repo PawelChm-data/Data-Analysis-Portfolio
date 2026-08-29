@@ -1,6 +1,6 @@
 -- SQL Fundamentals at SQLBolt
 -- Lesson: 5
--- Datset: https://sqlbolt.com/lesson/select_queries_review
+-- Dataset: https://sqlbolt.com/lesson/select_queries_review
 
 -- Task 1
 SELECT * FROM north_american_cities 
