@@ -1,6 +1,6 @@
 -- SQL Fundamentals at SQLBolt
 -- Lesson: 4
--- Datset: https://sqlbolt.com/lesson/filtering_sorting_query_results
+-- Dataset: https://sqlbolt.com/lesson/filtering_sorting_query_results
 
 -- Task 1
 SELECT DISTINCT director FROM movies ORDER BY director ASC;
