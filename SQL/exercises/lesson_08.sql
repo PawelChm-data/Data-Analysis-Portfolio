@@ -1,6 +1,6 @@
 -- SQL Fundamentals at SQLBolt
 -- Lesson: 8
--- Datset: https://sqlbolt.com/lesson/select_queries_with_nulls
+-- Dataset: https://sqlbolt.com/lesson/select_queries_with_nulls
 
 -- Task 1
 select Role, Name, Building from Employees
