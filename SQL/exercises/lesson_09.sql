@@ -1,6 +1,6 @@
 -- SQL Fundamentals at SQLBolt
 -- Lesson: 9
--- Datset: https://sqlbolt.com/lesson/select_queries_with_expressions
+-- Dataset: https://sqlbolt.com/lesson/select_queries_with_expressions
 
 -- Task 1
 SELECT Movies.Title, (Boxoffice.Domestic_sales + Boxoffice.International_sales) / 1000000 as Combined_sales from Boxoffice
