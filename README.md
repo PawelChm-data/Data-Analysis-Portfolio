@@ -64,8 +64,8 @@ SQL
 ☑ LIMIT
 ☑ OFFSET
 ☑ JOINs
-☐ Aggregate functions
-☐ GROUP BY
+☑ Aggregate functions
+☑ GROUP BY
 ☐ HAVING
 ☐ CASE WHEN
 ☐ Subqueries
