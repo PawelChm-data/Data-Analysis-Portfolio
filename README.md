@@ -66,15 +66,15 @@ SQL
 ☑ JOINs
 ☑ Aggregate functions
 ☑ GROUP BY
-☐ HAVING
+☑ HAVING
 ☐ CASE WHEN
 ☐ Subqueries
 ☐ CTEs
 ☐ Window functions
 
 Excel
-☐ Excel fundamentals
-☐ Basic formulas
+☑ Excel fundamentals
+☑ Basic formulas
 ☐ IF
 ☐ COUNTIF / COUNTIFS
 ☐ SUMIF / SUMIFS
