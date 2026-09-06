@@ -26,7 +26,7 @@ While fraud prevention and transaction monitoring are areas of interest, this po
 
 ```text
 SQL/
-└── SQLBolt/
+├── SQLBolt/
   └── Lessons/
   └── Practice/
 
@@ -35,7 +35,7 @@ Excel/
 └── projects/
 
 PowerBI/
-└── projects/
+├── projects/
 
 Python/
 ├── exercises/
