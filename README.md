@@ -26,7 +26,9 @@ While fraud prevention and transaction monitoring are areas of interest, this po
 
 ```text
 SQL/
-└── exercises/
+└── SQLBolt/
+  └── Lessons/
+  └── Practice/
 
 Excel/
 ├── exercises/
@@ -75,7 +77,7 @@ SQL
 Excel
 ☑ Excel fundamentals
 ☑ Basic formulas
-☐ IF
+☑ IF
 ☐ COUNTIF / COUNTIFS
 ☐ SUMIF / SUMIFS
 ☐ XLOOKUP
