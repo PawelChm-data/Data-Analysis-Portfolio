@@ -69,7 +69,7 @@ SQL
 ☑ Aggregate functions
 ☑ GROUP BY
 ☑ HAVING
-☐ CASE WHEN
+☑ CASE WHEN
 ☐ Subqueries
 ☐ CTEs
 ☐ Window functions
