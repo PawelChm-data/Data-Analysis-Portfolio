@@ -70,7 +70,7 @@ SQL
 ☑ GROUP BY
 ☑ HAVING
 ☑ CASE WHEN
-☐ Subqueries
+☑ Subqueries
 ☐ CTEs
 ☐ Window functions
 
