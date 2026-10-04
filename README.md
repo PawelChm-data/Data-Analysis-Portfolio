@@ -71,7 +71,7 @@ SQL
 ☑ HAVING
 ☑ CASE WHEN
 ☑ Subqueries
-☐ CTEs
+☑ CTEs
 ☐ Window functions
 
 Excel
