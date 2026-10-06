@@ -72,7 +72,7 @@ SQL
 ☑ CASE WHEN
 ☑ Subqueries
 ☑ CTEs
-☐ Window functions
+☑ Window functions
 
 Excel
 ☑ Excel fundamentals
