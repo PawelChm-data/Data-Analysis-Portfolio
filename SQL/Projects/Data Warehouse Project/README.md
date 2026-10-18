@@ -189,9 +189,3 @@ The repository includes a `LICENSE` file containing MIT License terms and copyri
 Source datasets and other third-party materials remain subject to their respective licenses and usage terms.
 
 For details, see the [`LICENSE`](LICENSE) file.
-
-## Project Status
-
-**Status: In progress**
-
-The project will evolve as additional data quality checks, SQL analysis queries, and documentation are developed and validated.
