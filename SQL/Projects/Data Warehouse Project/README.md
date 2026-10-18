@@ -1,31 +1,35 @@
-# Data Warehouse and Analytics Project
+# Data Warehouse Project
 
 ## Overview
 
-This project demonstrates the design and implementation of a modern data warehouse using **Microsoft SQL Server and T-SQL**.
+This project demonstrates the development of a SQL-based data warehouse using **Microsoft SQL Server and T-SQL**.
 
-The objective is to consolidate sales data from two source systems — CRM and ERP — into a centralized data warehouse. The data is processed through multiple layers to improve its quality, consistency, and usability for analytical reporting.
+The project integrates CRM and ERP data from CSV source files into a centralized data warehouse. Data is processed through three layers — Bronze, Silver, and Gold — following the Medallion Architecture.
 
-The project covers data ingestion, data cleansing, data integration, dimensional modeling, data quality validation, and SQL-based business analysis.
+The implementation covers database initialization, raw data ingestion, data cleansing, standardization, integration, dimensional modeling, and basic data quality validation.
+
+This repository is part of my Data Analysis Portfolio and documents my practical work with SQL Server, ETL processes, and data warehouse design.
 
 ## Project Objectives
 
-- Build a modern data warehouse using SQL Server.
-- Integrate data from CRM and ERP source systems.
-- Implement a Medallion Architecture consisting of Bronze, Silver, and Gold layers.
-- Develop ETL processes to load, clean, transform, and prepare data.
-- Apply data quality checks and validate the resulting datasets.
-- Create a business-ready analytical data model.
-- Use SQL to analyze customer behavior, product performance, and sales trends.
-- Document the technical approach and analytical decisions.
+- Build a data warehouse using Microsoft SQL Server.
+- Load CRM and ERP source data from CSV files.
+- Implement the Bronze, Silver, and Gold layers.
+- Develop stored procedures for data loading and transformation.
+- Clean and standardize customer, product, sales, and ERP data.
+- Integrate source systems using SQL joins.
+- Create customer and product dimensions and a sales fact view.
+- Apply data quality checks and validate relationships between datasets.
+- Practice SQL development, data modeling, and ETL design.
 
 ## Technologies
 
 - **Database:** Microsoft SQL Server
 - **Query Language:** T-SQL
-- **Data Sources:** CRM and ERP CSV files
+- **Source Data:** CRM and ERP CSV files
 - **Architecture:** Medallion Architecture
-- **Data Modeling:** Fact and dimension tables; star schema
+- **Data Modeling:** Fact and dimension views, Star Schema
+- **ETL:** Stored procedures, `BULK INSERT`, SQL transformations
 - **Version Control:** Git and GitHub
 
 ## Repository Structure
@@ -34,149 +38,160 @@ The project covers data ingestion, data cleansing, data integration, dimensional
 Data-Analysis-Portfolio/
 └── SQL/
     └── Projects/
-        └── Data-Warehouse-Project/
+        └── Data Warehouse Project/
             ├── README.md
+            ├── LICENSE
             ├── datasets/
             │   ├── source_crm/
+            │   │   ├── cust_info.csv
+            │   │   ├── prd_info.csv
+            │   │   └── sales_details.csv
             │   └── source_erp/
-            ├── scripts/
-            │   ├── init_database.sql
-            │   ├── bronze/
-            │   ├── silver/
-            │   └── gold/
-            ├── tests/
-            └── docs/
+            │       ├── CUST_AZ12.csv
+            │       ├── LOC_A101.csv
+            │       └── PX_CAT_G1V2.csv
+            └── scripts/
+                ├── init_database.sql
+                ├── bronze/
+                │   ├── ddl_bronze.sql
+                │   └── proc_load_bronze.sql
+                ├── silver/
+                │   ├── ddl_silver.sql
+                │   └── proc_load_silver.sql
+                └── gold/
+                    └── ddl_gold.sql
 ```
-
-The repository structure separates source datasets, SQL scripts, data quality tests, and project documentation to make the implementation easier to navigate and maintain.
-
-Only files that are permitted to be redistributed should be committed to the repository.
 
 ## Data Architecture
 
-The project follows the **Medallion Architecture**, organizing data into three layers.
+The project follows the **Medallion Architecture**, separating raw data ingestion, data transformation, and analytical data modeling.
 
 ### 1. Bronze Layer — Raw Data
 
-The Bronze layer stores data imported from the source systems with minimal transformation.
+The Bronze layer stores data imported from the CRM and ERP CSV files.
 
-Responsibilities:
-- Load CRM and ERP data from CSV files.
-- Preserve the original source values.
-- Establish a consistent structure for subsequent processing.
-- Support data traceability and troubleshooting.
+Implemented functionality:
+- Creates six Bronze tables.
+- Imports CSV files using `BULK INSERT`.
+- Skips the header row during ingestion.
+- Uses `TRUNCATE TABLE` before reloading each target table.
+- Reports individual table load durations and total execution time.
+- Implements basic error reporting with `TRY...CATCH`.
 
-### 2. Silver Layer — Cleaned and Standardized Data
+Main scripts:
+- `scripts/bronze/ddl_bronze.sql`
+- `scripts/bronze/proc_load_bronze.sql`
 
-The Silver layer improves data quality and consistency.
+### 2. Silver Layer — Cleansed and Standardized Data
 
-Responsibilities:
-- Identify and handle missing or invalid values.
-- Standardize data formats and representations.
-- Remove or resolve duplicates where appropriate.
-- Validate data types and business rules.
-- Prepare consistent datasets for integration.
+The Silver layer transforms raw data into a more consistent format for integration and analysis.
 
-### 3. Gold Layer — Business-Ready Data
+Implemented functionality:
+- Creates six Silver tables.
+- Removes leading and trailing spaces from customer names.
+- Standardizes marital status, gender, product lines, and country values.
+- Excludes customer records with missing customer IDs and retains the latest record per customer ID.
+- Extracts product category and product keys from source values.
+- Derives product end dates based on subsequent product versions.
+- Converts order, shipping, and due dates into SQL date values and handles invalid date representations.
+- Handles missing or invalid sales and price values.
+- Removes the `NAS` prefix from applicable ERP customer identifiers and normalizes customer location identifiers.
+- Records the warehouse insertion timestamp through the `dwh_create_date` default column.
 
-The Gold layer contains data prepared for analytical queries and reporting.
+Main scripts:
+- `scripts/silver/ddl_silver.sql`
+- `scripts/silver/proc_load_silver.sql`
 
-Responsibilities:
-- Integrate the processed CRM and ERP datasets.
-- Build fact and dimension tables.
-- Implement a star schema where appropriate.
-- Support efficient business reporting and analytical queries.
-- Provide consistent measures for sales and customer analysis.
+### 3. Gold Layer — Analytical Data Model
 
-## Data Warehouse Development
+The Gold layer exposes integrated, business-oriented views based on the transformed Silver data.
 
-The project is organized around the following stages.
+Implemented views:
 
-### 1. Database Initialization
+| View | Purpose |
+|---|---|
+| `gold.dim_customers` | Customer attributes, country, gender, marital status, and birthdate |
+| `gold.dim_products` | Product attributes, categories, costs, and current product versions |
+| `gold.fact_sales` | Sales transactions linked to customer and product dimension keys |
 
-Create the database and the schemas or objects required by the warehouse.
+The model follows a Star Schema approach, with a sales fact view connected to customer and product dimensions.
 
-### 2. Data Ingestion
+The views use SQL joins to integrate CRM and ERP data and provide a consistent structure for future analytical queries and reporting.
 
-Load the source files into the Bronze layer using SQL Server.
+Main script:
+- `scripts/gold/ddl_gold.sql`
 
-### 3. Data Cleansing and Transformation
+## Getting Started
 
-Process raw data in the Silver layer, applying data quality rules, standardization, and transformations.
+### Prerequisites
 
-### 4. Data Integration and Modeling
+- Microsoft SQL Server.
+- SQL Server Management Studio (SSMS) or another compatible SQL client.
+- Access to the project CSV files.
+- Appropriate SQL Server permissions to create database objects and import files.
 
-Combine the prepared datasets and develop the Gold layer, including fact and dimension tables.
+### Execution Order
 
-### 5. Data Quality Validation
+Run the scripts in the following order:
 
-Use SQL queries to verify data completeness, consistency, uniqueness, and referential integrity.
+1. `scripts/init_database.sql` — initialize the database.
+2. `scripts/bronze/ddl_bronze.sql` — create the Bronze tables.
+3. `scripts/bronze/proc_load_bronze.sql` — create the Bronze loading procedure.
+4. Execute `bronze.load_bronze` to import the source CSV files.
+5. `scripts/silver/ddl_silver.sql` — create the Silver tables.
+6. `scripts/silver/proc_load_silver.sql` — create the Silver loading procedure.
+7. Execute `silver.load_silver` to transform and load the Silver data.
+8. `scripts/gold/ddl_gold.sql` — create the Gold views.
 
-### 6. Business Analysis
+The loading procedures must be created before they are executed. If a procedure script contains an `EXEC` statement before its `CREATE OR ALTER PROCEDURE` definition, execute the procedure separately after the definition has been created.
 
-Use the final analytical model to answer business questions and calculate relevant performance metrics.
+### Source File Paths
 
-## Project Requirements
+The Bronze loading procedure currently uses local Windows file paths to access the CSV files.
 
-### Data Engineering
+Before running the procedure, update the paths in `proc_load_bronze.sql` to match the location of the datasets on your machine. SQL Server must be able to access these files using the relevant service account permissions.
 
-**Objective:** Develop a centralized data warehouse that consolidates sales data from CRM and ERP systems.
+## Data Quality and Validation
 
-Specifications:
-- Import data from the provided CRM and ERP source files.
-- Clean and standardize data before analytical use.
-- Integrate related entities into a consistent data model.
-- Focus on the latest available dataset; historical historization is outside the initial scope.
-- Document the data model, transformations, and data quality rules.
-- Organize SQL scripts into logical, reusable stages.
+Data quality checks are an important part of the development process.
 
-### Analytics and Reporting
+Validation areas include:
+- Missing customer identifiers.
+- Duplicate customer records.
+- Invalid or missing date values.
+- Standardization of categorical values.
+- Consistency of sales amounts, quantities, and prices.
+- Unmatched customer and product references between the fact and dimension views.
 
-**Objective:** Use SQL to derive business insights from the Gold layer.
+These checks can be performed using SQL queries against the Bronze, Silver, and Gold layers. The Gold fact view uses `LEFT JOIN` operations, so unmatched dimension records can be identified by checking for missing dimension keys.
 
-Areas of analysis:
-- **Customer Behavior:** Customer activity, purchasing patterns, and customer-level metrics.
-- **Product Performance:** Product sales, demand, and contribution to overall sales.
-- **Sales Trends:** Revenue trends, monthly performance, and period-over-period comparisons where the available data supports them.
+## Current Scope and Limitations
 
-The analysis should connect query results to clear business questions and explain the significance of the findings.
+The current implementation focuses on building the data warehouse structure and its core loading and transformation processes.
 
-## Data Quality and Testing
+The project currently includes:
+- Database initialization.
+- Bronze and Silver table creation.
+- Bronze and Silver loading procedures.
+- Gold customer and product dimension views.
+- A Gold sales fact view.
 
-Data quality is an essential part of the implementation.
+Standalone automated test scripts, a separate documentation directory, dashboards, and a comprehensive collection of business analysis queries are not currently included in the repository.
 
-Potential validation checks include:
-- Missing values in required columns.
-- Duplicate business keys.
-- Invalid data types or inconsistent formats.
-- Unmatched customer, product, or employee references.
-- Unexpected sales or quantity values.
-- Consistency between source data and transformed datasets.
-
-The checks should be implemented as SQL queries and documented alongside the relevant scripts.
-
-## Documentation
-
-Project documentation focuses on the implementation itself rather than supplementary learning materials.
-
-It may include:
-- Project scope and objectives.
-- Data source descriptions.
-- Transformation rules and assumptions.
-- Data model and table descriptions.
-- Data quality checks.
-- Analytical queries and business findings.
-
-## Project Status
-
-**Status:** In progress
-
-This repository will be updated as the data warehouse, transformation scripts, validation checks, and analytical queries are developed and tested.
+The loading procedures use full reloads of their target tables rather than incremental loading. The Gold dimension keys are generated using `ROW_NUMBER()`, so their values are not guaranteed to remain stable if the underlying data or sort order changes.
 
 ## License and Attribution
 
-This project is intended for educational and portfolio purposes.
+This project is an educational and portfolio adaptation inspired by the Data Warehouse and Analytics Project by Data with Baraa.
 
-The project concept and learning approach are inspired by the Data Warehouse and Analytics Project by Data with Baraa. Original source materials, videos, and graphics are not included in this repository.
+The repository includes a `LICENSE` file containing MIT License terms and copyright notices for the original work and original modifications. Attribution for adapted material is retained where applicable.
 
-Any datasets, code, or other materials redistributed with the project must comply with their respective licenses and usage terms.
+Source datasets and other third-party materials remain subject to their respective licenses and usage terms.
+
+For details, see the [`LICENSE`](LICENSE) file.
+
+## Project Status
+
+**Status: In progress**
+
+The project will evolve as additional data quality checks, SQL analysis queries, and documentation are developed and validated.
