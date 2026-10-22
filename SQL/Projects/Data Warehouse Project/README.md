@@ -182,8 +182,6 @@ The loading procedures use full reloads of their target tables rather than incre
 
 ## License and Attribution
 
-This project is an educational and portfolio adaptation inspired by the Data Warehouse and Analytics Project by Data with Baraa: https://github.com/DataWithBaraa
-
 The repository includes a `LICENSE` file containing MIT License terms and copyright notices for the original work and original modifications. Attribution for adapted material is retained where applicable.
 
 Source datasets and other third-party materials remain subject to their respective licenses and usage terms.
