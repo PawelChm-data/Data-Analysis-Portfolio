@@ -1,11 +1,11 @@
-# Advanced Data Analytics — SQL Server
+# Data Analytics — SQL Server
 
 A collection of SQL Server (T-SQL) queries for exploratory data analysis, ranking, time-series analysis, performance comparisons, segmentation, and customer/product reporting.
 
 ## Project structure
 
 ```text
-Advanced-Data-Analytics-Project/
+Data-Analytics/
 ├── README.md
 ├── LICENSE
 ├── Datasets
