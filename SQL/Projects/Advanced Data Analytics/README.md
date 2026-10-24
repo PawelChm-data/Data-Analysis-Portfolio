@@ -5,7 +5,7 @@ A collection of SQL Server (T-SQL) queries for exploratory data analysis, rankin
 ## Project structure
 
 ```text
-Data-Analytics/
+Data Analytics/
 ├── README.md
 ├── LICENSE
 ├── Datasets
