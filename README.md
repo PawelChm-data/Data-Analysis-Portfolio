@@ -55,8 +55,8 @@ Data-Analysis-Portfolio/
         │   ├── LICENSE
         │   ├── datasets/
         │   │   ├── DataWarehouseAnalytics.bak
-        │       ├── dim.customers.csv
-        │       ├── dim_products.csv
+        │   │   ├── dim.customers.csv
+        │   │   ├── dim_products.csv
         │   │   └── fact_sales.csv
         │   └── scripts/
 
