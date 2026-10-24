@@ -50,7 +50,7 @@ Data-Analysis-Portfolio/
         │       ├── silver/
         │       └── gold/
         │
-        └── Data-Analytics/
+        ├── Data-Analytics/
         │   ├── README.md
         │   ├── LICENSE
         │   ├── datasets/
