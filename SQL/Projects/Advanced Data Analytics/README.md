@@ -45,14 +45,6 @@ Advanced-Data-Analytics-Project/
 - Product cost and customer spending segmentation
 - Customer and product reporting views
 
-## Important interpretation notes
-
-- `DATEDIFF` counts date-part boundaries; it does not calculate an exact elapsed duration.
-- The customer age calculation in the customer report adjusts for whether the birthday has occurred this year.
-- Month-over-month analysis uses a full month-start date, not only the month number, so months from different years are not mixed together.
-- Ranking queries based on `gold.fact_sales` rank products/customers represented in sales data; they do not include products with no sales unless the query is explicitly changed to start from the dimension.
-- Segmentation thresholds are illustrative business rules and should be adjusted to the business context.
-- These scripts are learning/portfolio examples, not a production-ready reporting layer.
 
 ## Related project
 
