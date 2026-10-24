@@ -19,35 +19,59 @@ While fraud prevention and transaction monitoring are areas of interest, this po
 - Power Query
 - Power BI
 - Python
-- Pandas
 - Git & GitHub
+
 
 ## Repository Structure
 
 ```text
-SQL/
-├── SQLBolt/
-  └── Lessons/
-  └── Practice/
+Data-Analysis-Portfolio/
+│
+├── README.md
+│
+└── SQL/
+    │
+    ├── Learning/
+    │   └── SQLBolt/
+    │       ├── Lessons/
+    │       └── Practice/
+    │
+    └── Projects/
+        │
+        ├── Data Warehouse Project/
+        │   ├── README.md
+        │   ├── LICENSE
+        │   ├── datasets/
+        │   │   ├── source_crm/
+        │   │   └── source_erp/
+        │   └── scripts/
+        │       ├── init_database.sql
+        │       ├── bronze/
+        │       ├── silver/
+        │       └── gold/
+        │
+        └── Data-Analytics/
+        │   ├── README.md
+        │   ├── LICENSE
+        │   ├── datasets/
+        │   │   ├── DataWarehouseAnalytics.bak
+        │       ├── dim.customers.csv
+        │       ├── dim_products.csv
+        │   │   └── fact_sales.csv
+        │   └── scripts/
 
-Excel/
-├── exercises/
-└── projects/
+```
 
-PowerBI/
-├── projects/
+### Repository Contents
 
-Python/
-├── exercises/
-└── projects/
+- **SQL Learning** — SQL fundamentals, structured lessons, and practice exercises based on SQLBolt.
+- **Data Warehouse Project** — SQL Server data warehouse using the Bronze, Silver, and Gold layers, including data loading, transformations, and analytical data models.
+- **Advanced Data Analytics** — SQL-based exploratory analysis, business KPIs, ranking queries, time-series analysis, performance comparisons, segmentation, and reporting views.
 
-projects/
-├── customer-analysis/
-├── sales-analysis/
-├── financial-analysis/
-└── transaction-monitoring-analysis/
+The Advanced Data Analytics project builds on the Gold-layer objects created by the Data Warehouse Project.
 
-Additional folders and projects will be added as my skills develop.
+Additional learning materials and projects will be added as the portfolio develops.
+
 
 Current Learning Progress
 
@@ -103,19 +127,6 @@ Python
 ☐ Data analysis
 ☐ Data visualization
 
-Projects
-
-Practical projects will be added as I progress.
-
-Planned areas include:
-
-Customer analysis
-Sales and e-commerce analysis
-Financial data analysis
-Business performance analysis
-Transaction Monitoring and AML analytics
-
-Each project will focus on a specific business problem and document the process from data preparation to analysis and conclusions.
 
 Learning Approach
 
