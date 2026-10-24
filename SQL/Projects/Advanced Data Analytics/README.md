@@ -7,17 +7,14 @@ A collection of SQL Server (T-SQL) queries for exploratory data analysis, rankin
 ```text
 Advanced-Data-Analytics-Project/
 ├── README.md
-├── Exploratory-Data-Analysis/
-│   ├── 01_Database_and_Dimensions/
-│   ├── 02_Business_Metrics/
-│   └── 03_Distribution_and_Revenue/
-├── Ranking-Analysis/
-└── Advanced-Analytics/
-    ├── 01_Time_Analysis/
-    ├── 02_Performance_Analysis/
-    ├── 03_Part_to_Whole/
-    ├── 04_Segmentation/
-    └── 05_Reports/
+├── LICENSE
+├── Datasets
+│   ├── DataWarehouseAnalytics.bak
+│   ├── dim.customers.csv
+│   ├── dim_products.csv
+│   └── fact_sales.csv
+└── scripts/
+
 ```
 
 ## Prerequisites
