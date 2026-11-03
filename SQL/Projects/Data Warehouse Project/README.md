@@ -38,7 +38,7 @@ This repository is part of my Data Analysis Portfolio and documents my practical
 Data-Analysis-Portfolio/
 └── SQL/
     └── Projects/
-        └── Data Warehouse Project/
+        └── Data Warehouse Engineering/
             ├── README.md
             ├── LICENSE
             ├── datasets/
@@ -182,6 +182,8 @@ Standalone automated test scripts, a separate documentation directory, dashboard
 The loading procedures use full reloads of their target tables rather than incremental loading. The Gold dimension keys are generated using `ROW_NUMBER()`, so their values are not guaranteed to remain stable if the underlying data or sort order changes.
 
 ## License and Attribution
+
+The datasets used in this project are provided by Data with Baraa and are used for educational and portfolio purposes.
 
 The repository includes a `LICENSE` file containing MIT License terms and copyright notices for the original work and original modifications. Attribution for adapted material is retained where applicable.
 
