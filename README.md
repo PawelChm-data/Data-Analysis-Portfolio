@@ -28,10 +28,14 @@ Data-Analysis-Portfolio/
 └── SQL/
     │
     ├── Learning/
-    │   └── SQLBolt/
+    │   ├── SQLBolt/
     │       ├── Lessons/
     │       └── Practice/
     │
+    │   └── SQL Server/
+    │       ├── Datasets/
+    │       ├── Scripts/
+    │       └── README.md/
     └── Projects/
         │
         ├── Data Warehouse Engineering/
