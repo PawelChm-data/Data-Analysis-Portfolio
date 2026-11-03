@@ -9,7 +9,7 @@ Data Analytics/
 ├── README.md
 ├── LICENSE
 ├── Datasets
-│   ├── DataWarehouseAnalytics.bak
+│   ├── DataWarehouse.bak
 │   ├── dim.customers.csv
 │   ├── dim_products.csv
 │   └── fact_sales.csv

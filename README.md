@@ -2,7 +2,7 @@
 
 Welcome to my data analysis portfolio.
 
-This repository documents my journey in developing practical data analysis skills using SQL, Excel, Power BI and Python.
+This repository documents my journey in developing practical data analysis skills using SQL.
 
 The goal is to build a strong foundation in data analysis and gradually apply these skills to real-world business problems, including customer analytics, fraud prevention, financial data and transaction monitoring.
 
@@ -10,7 +10,6 @@ The goal is to build a strong foundation in data analysis and gradually apply th
 
 I am developing my data analytics skills alongside my professional experience as Fraud Analyst.
 
-While fraud prevention and transaction monitoring are areas of interest, this portfolio is intentionally broader and covers general data analysis techniques that can be applied across different industries and business domains.
 
 ## Tools & Technologies
 
@@ -38,7 +37,7 @@ Data-Analysis-Portfolio/
     │
     └── Projects/
         │
-        ├── Data Warehouse Project/
+        ├── Data Warehouse Engineering/
         │   ├── README.md
         │   ├── LICENSE
         │   ├── datasets/
@@ -65,9 +64,9 @@ Data-Analysis-Portfolio/
 
 ### Repository Contents
 
-- **SQL Learning** — SQL fundamentals, structured lessons, and practice exercises based on SQLBolt.
-- **Data Warehouse Project** — SQL Server data warehouse using the Bronze, Silver, and Gold layers, including data loading, transformations, and analytical data models.
-- **Advanced Data Analytics** — SQL-based exploratory analysis, business KPIs, ranking queries, time-series analysis, performance comparisons, segmentation, and reporting views.
+- **SQL Learning** — SQL fundamentals, structured lessons, and practice exercises based on SQLBolt and SQL Server.
+- **Data Warehouse Engineering** — SQL Server data warehouse using the Bronze, Silver, and Gold layers, including data loading, transformations, and analytical data models.
+- **Data Analytics** — SQL-based exploratory analysis, business KPIs, ranking queries, time-series analysis, performance comparisons, segmentation, and reporting views.
 
 The Advanced Data Analytics project builds on the Gold-layer objects created by the Data Warehouse Project.
 
