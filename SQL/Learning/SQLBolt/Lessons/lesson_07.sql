@@ -13,6 +13,6 @@ left join Employees
 on Buildings.Building_name = Employees.Building;
 
 -- Task 3
-SELECT DISTINCT Buildings.building_name, Employees.Role, FROM buildings 
+SELECT DISTINCT Buildings.building_name, Employees.Role FROM buildings 
 LEFT JOIN employees
 ON Buildings.building_name = Employees.building;
