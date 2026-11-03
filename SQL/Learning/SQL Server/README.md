@@ -87,4 +87,3 @@ Other supporting tables may also exist in the database, but the exercises primar
 - Thresholds and sample business rules may be selected as part of an exercise.
 - `NULL` values are intentional in several exercises and should be handled explicitly where required.
 - Window-function results depend on the `ORDER BY` and window frame specified.
-- The first three exercise files were added as supplied and were not reworked in this update.
