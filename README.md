@@ -5,9 +5,6 @@ Welcome to my data analysis portfolio.
 This repository documents my journey in developing practical data analysis skills using SQL.
 
 The goal is to build a strong foundation in data analysis and gradually apply these skills to real-world business problems, including customer analytics, fraud prevention, financial data and transaction monitoring.
-
-## About This Portfolio
-
 I am developing my data analytics skills alongside my professional experience as Fraud Analyst.
 
 
