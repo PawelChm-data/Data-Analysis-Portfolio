@@ -18,6 +18,9 @@ and filtering to joins, aggregation, data modification, and table management.
 
 ```text
 SQLBolt/
+├── Datasets/
+│   ├── customers.csv
+│   └── transactions.csv
 ├── Lessons/
 │   ├── lesson_01.sql
 │   ├── lesson_02.sql
