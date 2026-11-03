@@ -72,7 +72,6 @@ The exercises use the `Sales` schema. The main tables and columns are:
 - `Category` — product category
 - `Price` — product price
 
-Other supporting tables may also exist in the database, but the exercises primarily use the four tables listed above.
 
 ## How to use
 
@@ -84,6 +83,5 @@ Other supporting tables may also exist in the database, but the exercises primar
 ## Notes
 
 - These exercises are for learning and portfolio practice.
-- Thresholds and sample business rules may be selected as part of an exercise.
 - `NULL` values are intentional in several exercises and should be handled explicitly where required.
 - Window-function results depend on the `ORDER BY` and window frame specified.
