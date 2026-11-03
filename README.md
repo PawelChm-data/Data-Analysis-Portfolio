@@ -1,19 +1,27 @@
 # Data Analysis Portfolio
 
-Welcome to my data analysis portfolio.
+A collection of SQL learning materials and hands-on projects focused on **SQL Server, data analysis, and data warehouse development**.
 
-This repository documents my journey in developing practical data analysis skills using SQL.
+This repository documents my practical learning process — from SQL fundamentals and query-writing exercises to building a multi-layer data warehouse and using its analytical model to answer business questions.
 
-The goal is to build a strong foundation in data analysis and gradually apply these skills to real-world business problems, including customer analytics, fraud prevention, financial data and transaction monitoring.
-I am developing my data analytics skills alongside my professional experience as Fraud Analyst.
+## Focus Areas
 
+- SQL querying, filtering, joins, and aggregations
+- Data cleaning, transformation, and validation
+- ETL development and data warehouse architecture
+- Dimensional modeling and analytical views
+- Business KPIs, trend analysis, ranking, and segmentation
+- Git and GitHub for version control and project documentation
 
 ## Tools & Technologies
 
-- SQL server
-- Microsoft Excel
-- Git & GitHub
-
+| Area | Tools |
+|---|---|
+| Database | Microsoft SQL Server |
+| Query language | T-SQL |
+| SQL environment | SQL Server Management Studio (SSMS) |
+| Version control | Git, GitHub |
+| Data formats | CSV, SQL Server backup files (`.bak`) |
 
 ## Repository Structure
 
@@ -27,61 +35,109 @@ Data-Analysis-Portfolio/
     ├── Learning/
     │   ├── SQLBolt/
     │   │   ├── Datasets/
-    │   │   │   ├── customers.csv
-    │   │   │   └── transactions.csv
     │   │   ├── Lessons/
     │   │   ├── Practice/
-    │   │   └── README.md/
+    │   │   └── README.md
     │   │
     │   └── SQL Server/
     │       ├── Datasets/
-    │       │   ├── SalesDB.bak
-    │       │   ├── customers.csv
-    │       │   ├── employees.csv
-    │       │   ├── orders.csv
-    │       │   └── products.csv
     │       ├── Scripts/
-    │       └── README.md/
-    │
+    │       └── README.md
     │
     └── Projects/
-        │
         ├── Data Warehouse Engineering/
-        │   ├── README.md
-        │   ├── LICENSE
         │   ├── datasets/
-        │   │   ├── DataWarehouse.bak
         │   │   ├── source_crm/
         │   │   └── source_erp/
-        │   └── scripts/
-        │       ├── init_database.sql
-        │       ├── bronze/
-        │       ├── silver/
-        │       └── gold/
-        │
-        ├── Data Analytics/
-        │   ├── README.md
+        │   ├── scripts/
+        │   │   ├── bronze/
+        │   │   ├── silver/
+        │   │   └── gold/
         │   ├── LICENSE
-        │   ├── datasets/
-        │   │   ├── DataWarehouse.bak
-        │   │   ├── dim.customers.csv
-        │   │   ├── dim_products.csv
-        │   │   └── fact_sales.csv
-        │   └── scripts/
-
+        │   └── README.md
+        │
+        └── Data Analytics/
+            ├── datasets/
+            ├── scripts/
+            ├── LICENSE
+            └── README.md
 ```
 
-## Repository Contents
+## Learning
 
-- **SQL Learning** — SQL fundamentals, structured lessons, and practice exercises based on SQLBolt and SQL Server.
-- **Data Warehouse Engineering** — SQL Server data warehouse using the Bronze, Silver, and Gold layers, including data loading, transformations, and analytical data models.
-- **Data Analytics** — SQL-based exploratory analysis, business KPIs, ranking queries, time-series analysis, performance comparisons, segmentation, and reporting views.
+### [SQLBolt – SQL Fundamentals & Practice](SQL/Learning/SQLBolt/README.md)
 
-The Advanced Data Analytics project builds on the Gold-layer objects created by the Data Warehouse Engineering project.
+A structured introduction to SQL based on the 18 interactive SQLBolt lessons, supported by additional practice exercises.
 
+Topics include:
 
-## Data Disclaimer
+- `SELECT`, `WHERE`, sorting, and filtering
+- Joins and handling `NULL` values
+- Expressions and aggregate functions
+- `GROUP BY` and `HAVING`
+- Data modification with `INSERT`, `UPDATE`, and `DELETE`
+- Table creation and modification
 
-All datasets used in this repository are synthetic, public or appropriately anonymized datasets intended for educational purposes.
+The folder also contains small CSV datasets used in supplementary exercises.
 
-No confidential, proprietary or personal data from employers or other organizations is included.
+### [SQL Server – Practice Exercises](SQL/Learning/SQL%20Server/README.md)
+
+A collection of **230 SQL Server exercises** organized into 23 scripts and built around the SalesDB sample database.
+
+Topics progress from basic querying to more advanced analytical SQL:
+
+- Filtering, joins, and set operators
+- String and date functions
+- `CASE` expressions and NULL handling
+- Conditional aggregation and window functions
+- Ranking, `LAG` / `LEAD`, CTEs, and subqueries
+
+## Projects
+
+### [Data Warehouse Engineering](SQL/Projects/Data%20Warehouse%20Engineering/README.md)
+
+An end-to-end SQL Server data warehouse implementation integrating CRM and ERP source data.
+
+The project uses a **Bronze, Silver, and Gold** architecture to demonstrate:
+
+- Loading source CSV files into raw Bronze tables
+- Cleaning, standardizing, and transforming data in the Silver layer
+- Building customer and product dimensions and a sales fact view in the Gold layer
+- Using stored procedures and T-SQL transformations to implement the loading process
+
+### [Data Analytics](SQL/Projects/Data%20Analytics/README.md)
+
+A collection of SQL-based analytical scripts built on the Gold-layer data model produced by the Data Warehouse Engineering project.
+
+The analysis covers:
+
+- Database and dimension exploration
+- Business KPIs and revenue analysis
+- Customer and product distributions
+- Rankings and performance comparisons
+- Monthly trends, running totals, and moving averages
+- Customer and product segmentation
+- Analytical customer and product reporting views
+
+**Project dependency:** the Data Analytics scripts expect the `gold.fact_sales`, `gold.dim_customers`, and `gold.dim_products` objects created by the Data Warehouse Engineering project.
+
+## How to Explore This Repository
+
+1. Start with the SQLBolt materials to review the fundamentals.
+2. Continue with the SQL Server exercises to practice T-SQL concepts using SalesDB.
+3. Explore the Data Warehouse Engineering project to follow the data loading and transformation workflow.
+4. Review the Data Analytics project to see how the resulting Gold-layer model can support business-oriented analysis.
+
+Each learning section and project has its own README with more detailed information, prerequisites, and instructions.
+
+## Data Sources & Disclaimer
+
+The repository uses educational datasets from SQLBolt, Data with Baraa, and supplementary practice data.
+
+Third-party datasets and learning materials remain subject to their respective owners' licenses and terms. The MIT License files in individual project folders apply only to the original code and materials covered by those licenses; they do not automatically grant rights to third-party datasets.
+
+No confidential, proprietary, or personal data from employers or other organizations is intentionally included.
+
+## Status
+
+This portfolio is a work in progress. New exercises, analysis, documentation, and improvements may be added as I continue developing my SQL and data analysis skills.
