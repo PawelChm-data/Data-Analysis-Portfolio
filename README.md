@@ -69,7 +69,7 @@ Data-Analysis-Portfolio/
 
 ```
 
-### Repository Contents
+## Repository Contents
 
 - **SQL Learning** — SQL fundamentals, structured lessons, and practice exercises based on SQLBolt and SQL Server.
 - **Data Warehouse Engineering** — SQL Server data warehouse using the Bronze, Silver, and Gold layers, including data loading, transformations, and analytical data models.
@@ -77,7 +77,8 @@ Data-Analysis-Portfolio/
 
 The Advanced Data Analytics project builds on the Gold-layer objects created by the Data Warehouse Engineering project.
 
-Data Disclaimer
+
+## Data Disclaimer
 
 All datasets used in this repository are synthetic, public or appropriately anonymized datasets intended for educational purposes.
 
