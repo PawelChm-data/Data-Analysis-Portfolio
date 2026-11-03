@@ -77,16 +77,6 @@ Data-Analysis-Portfolio/
 
 The Advanced Data Analytics project builds on the Gold-layer objects created by the Data Warehouse Engineering project.
 
-
-The portfolio combines:
-
-Structured learning and exercises
-Practical data analysis
-Business-oriented problem solving
-Documentation of analytical decisions
-Gradual development of more advanced technical skills
-
-
 Data Disclaimer
 
 All datasets used in this repository are synthetic, public or appropriately anonymized datasets intended for educational purposes.
