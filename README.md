@@ -38,7 +38,7 @@ Data-Analysis-Portfolio/
     │
     └── Projects/
         │
-        ├── Data Warehouse Project/
+        ├── Data Warehouse Engineering/
         │   ├── README.md
         │   ├── LICENSE
         │   ├── datasets/
