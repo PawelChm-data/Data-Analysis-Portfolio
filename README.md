@@ -13,11 +13,8 @@ I am developing my data analytics skills alongside my professional experience as
 
 ## Tools & Technologies
 
-- SQL
+- SQL server
 - Microsoft Excel
-- Power Query
-- Power BI
-- Python
 - Git & GitHub
 
 
@@ -31,10 +28,14 @@ Data-Analysis-Portfolio/
 └── SQL/
     │
     ├── Learning/
-    │   └── SQLBolt/
+    │   ├── SQLBolt/
     │       ├── Lessons/
     │       └── Practice/
     │
+    │   └── SQL Server/
+    │       ├── Datasets/
+    │       ├── Scripts/
+    │       └── README.md/
     └── Projects/
         │
         ├── Data Warehouse Engineering/
@@ -54,7 +55,7 @@ Data-Analysis-Portfolio/
         │   ├── README.md
         │   ├── LICENSE
         │   ├── datasets/
-        │   │   ├── DataWarehouseAnalytics.bak
+        │   │   ├── DataWarehouse.bak
         │   │   ├── dim.customers.csv
         │   │   ├── dim_products.csv
         │   │   └── fact_sales.csv
@@ -68,67 +69,8 @@ Data-Analysis-Portfolio/
 - **Data Warehouse Engineering** — SQL Server data warehouse using the Bronze, Silver, and Gold layers, including data loading, transformations, and analytical data models.
 - **Data Analytics** — SQL-based exploratory analysis, business KPIs, ranking queries, time-series analysis, performance comparisons, segmentation, and reporting views.
 
-The Advanced Data Analytics project builds on the Gold-layer objects created by the Data Warehouse Project.
+The Advanced Data Analytics project builds on the Gold-layer objects created by the Data Warehouse Engineering project.
 
-Additional learning materials and projects will be added as the portfolio develops.
-
-
-Current Learning Progress
-
-SQL
-☑ SELECT / FROM
-☑ WHERE
-☑ Comparison operators
-☑ AND / OR
-☑ IN / NOT IN
-☑ BETWEEN
-☑ LIKE / NOT LIKE
-☑ % / _
-☑ DISTINCT
-☑ ORDER BY
-☑ ASC / DESC
-☑ LIMIT
-☑ OFFSET
-☑ JOINs
-☑ Aggregate functions
-☑ GROUP BY
-☑ HAVING
-☑ CASE WHEN
-☑ Subqueries
-☑ CTEs
-☑ Window functions
-
-Excel
-☑ Excel fundamentals
-☑ Basic formulas
-☑ IF
-☐ COUNTIF / COUNTIFS
-☐ SUMIF / SUMIFS
-☐ XLOOKUP
-☐ Pivot Tables
-☐ Conditional Formatting
-☐ Power Query
-☐ Data analysis projects
-
-Power BI
-☐ Data import
-☐ Data transformation
-☐ Data modelling
-☐ DAX fundamentals
-☐ Interactive dashboards
-☐ Data analysis projects
-
-Python
-☐ Python fundamentals
-☐ Data types and structures
-☐ Functions
-☐ Pandas
-☐ Data cleaning
-☐ Data analysis
-☐ Data visualization
-
-
-Learning Approach
 
 The portfolio combines:
 
@@ -137,8 +79,6 @@ Practical data analysis
 Business-oriented problem solving
 Documentation of analytical decisions
 Gradual development of more advanced technical skills
-
-The goal is not only to learn syntax and tools, but to understand how data can be used to answer business questions and support decision-making.
 
 
 Data Disclaimer
