@@ -29,10 +29,13 @@ Data-Analysis-Portfolio/
     │
     ├── Learning/
     │   ├── SQLBolt/
-    │       ├── Lessons/
-    │       ├── Practice/
-    │       └── README.md/
-    │
+    │   │   ├── Datasets/
+    │   │   │   ├── customers.csv
+    │   │   │   └── transactions.csv
+    │   │   ├── Lessons/
+    │   │   ├── Practice/
+    │   │   └── README.md/
+    │   │
     │   └── SQL Server/
     │       ├── Datasets/
     │       │   ├── SalesDB.bak
