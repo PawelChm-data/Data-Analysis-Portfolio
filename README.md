@@ -132,6 +132,4 @@ Each learning section and project has its own README with more detailed informat
 
 ## Data Sources & Disclaimer
 
-The repository uses educational datasets from SQLBolt, Data with Baraa, and supplementary practice data.
-
 No confidential, proprietary, or personal data from employers or other organizations is intentionally included.
